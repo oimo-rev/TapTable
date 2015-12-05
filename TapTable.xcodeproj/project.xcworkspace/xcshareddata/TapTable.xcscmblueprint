@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7CD4BC63DA6250EDDFA98A4AFAAFE127917DC8E9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D41F28E871983358581A3E19F5A29EC6FF04E84C" : 0,
+    "7CD4BC63DA6250EDDFA98A4AFAAFE127917DC8E9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "24E098AD-6DA9-4DB6-BDDF-A90AE3898B50",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D41F28E871983358581A3E19F5A29EC6FF04E84C" : "",
+    "7CD4BC63DA6250EDDFA98A4AFAAFE127917DC8E9" : "TapTable\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TapTable",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TapTable.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zushitomo\/TapTable.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7CD4BC63DA6250EDDFA98A4AFAAFE127917DC8E9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zushitomo\/SNS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D41F28E871983358581A3E19F5A29EC6FF04E84C"
+    }
+  ]
+}

@@ -26,7 +26,10 @@
     }
 }
 //cell 何回繰り返す？
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { return 2 ;}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 2;
+}
 
 //cell 何を編集する？
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:
@@ -45,7 +48,7 @@
 { [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 - (IBAction) tapBackBtn {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 //////////////////////
 - (void)viewDidLoad {

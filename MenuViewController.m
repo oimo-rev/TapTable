@@ -27,7 +27,10 @@
     }
 }
 //cell 何回繰り返す？
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section { return 2 ;}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 2;
+}
 
 //cell 何を編集する？
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:
@@ -49,7 +52,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     SelectViewController *VC;
     VC = [[SelectViewController alloc]initWithNibName:@"SelectViewController" bundle:nil];
-    [self presentViewController:VC animated:YES completion:nil];
+    [self presentViewController:VC animated:NO completion:nil];
     //画面遷移しなかったロジック（なぜなのかわからん）
     //    SelectViewController *selectViewController = [[SelectViewController alloc] initWithNibName:@"SelectViewController" bundle:nil];
     //    selectViewController.title = @"SelectView";

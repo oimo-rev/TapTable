@@ -48,11 +48,32 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //処理
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"次の画面に遷移しますか？" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"いいえ" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        [self cancelButtonPushed];
+    }]];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"はい" style:UIAlertActionStyleDefault handler:^(UIAlertAction*action){
+        [self otherButtonPushed];
+    }]];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+//    -(void)cancelButtonPushed{
+//    
+//    }
+//    -(void)otherButtonPushed{
+//      
+//    }
     //選択状態の解除
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     SelectViewController *VC;
     VC = [[SelectViewController alloc]initWithNibName:@"SelectViewController" bundle:nil];
     [self presentViewController:VC animated:NO completion:nil];
+    
+    
     //画面遷移しなかったロジック（なぜなのかわからん）
     //    SelectViewController *selectViewController = [[SelectViewController alloc] initWithNibName:@"SelectViewController" bundle:nil];
     //    selectViewController.title = @"SelectView";

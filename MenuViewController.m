@@ -48,17 +48,23 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //処理
+    [self Alert];
+    //選択状態の解除
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"次の画面に遷移しますか？" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+}
+-(void)Alert{
     
-    [alertController addAction:[UIAlertAction actionWithTitle:@"いいえ" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-        
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"次の画面に遷移しますか？" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"いいえ"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction *action){
     }]];
     
-    [alertController addAction:[UIAlertAction actionWithTitle:@"はい" style:UIAlertActionStyleDefault handler:^(UIAlertAction*action){
-        
-        //選択状態の解除
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"はい"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction*action){
         SelectViewController *VC;
         VC = [[SelectViewController alloc]initWithNibName:@"SelectViewController" bundle:nil];
         [self presentViewController:VC animated:NO completion:nil];
@@ -69,10 +75,8 @@
     
     
     
-    //画面遷移しなかったロジック（なぜなのかわからん）
-    //    SelectViewController *selectViewController = [[SelectViewController alloc] initWithNibName:@"SelectViewController" bundle:nil];
-    //    selectViewController.title = @"SelectView";
-    //    [self.navigationController pushViewController:selectViewController animated:YES];
+    
+    
 }
 
 
